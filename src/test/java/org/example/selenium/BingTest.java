@@ -19,7 +19,7 @@ public class BingTest {
     @BeforeAll
     public static void setUpDriver() {
         ChromeOptions options = new ChromeOptions();
-//        options.setHeadless(true);
+        options.setHeadless(true);
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver(options);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
